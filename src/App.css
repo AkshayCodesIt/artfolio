@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* body{
+    background-image: url(/images.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.4); 
+    background-blend-mode: lighten; 
+    will-change: transform;
+    transform: translateZ(0);
+} */
+
+body{
+    overflow-x: hidden;
+}  
+
+/* Header.jsx section */
+
+.nav-button{
+    background: linear-gradient(45deg, #145d5c, #39A3A2);
+}
+
+.nav-blur{
+    backdrop-filter: blur(10px);
+}
+
+
+/* Hero section */
+:hover.nav-button{
+    background: linear-gradient(45deg, #104d4c, #2a7978,);
+}
+
+.masterpiece{
+    background: linear-gradient(45deg, #264653, #2a9d8f, #e9c46a, #f4a261, #e76f51);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imgsize{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    z-index: 20;
+}
+
+/* Spotlight.jsx section */
+
+.spotimg{
+    width: 1250px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.logos{
+    height: 100px;
+    width: auto;
+    padding-left: 11px;
+    padding-right: 11px;
+    /* margin-bottom: 10px; */
+}
+
+/* Creative.jsx section */
+
+.creativeimg{
+    width: 180px;
+    height: 230px;
+    position: absolute;
+    top: 120px;
+    left: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0;
+}
+
+/* Community.jsx section */
+
+.commprofile{
+    
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+
+}
+
+/* Pricing.jsx section */
+
+.h3{
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.h4{
+    text-align: left;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 13px;
+}
+
+.price{
+    font-size: small;
+    font-weight: 600;
+    color: #83878E;
+    padding: 5px 0;
+    list-style: none; /* Remove default list style */
+    position: relative; /* Position relative for pseudo-element */
+    padding-left: 35px; /* Add padding to the left to make space for the image */
+}
+
+.price::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-image: url('/images/checkmark.png');
+    background-size: contain; /* Ensure the image fits within the specified size */
+    background-repeat: no-repeat;
+}
+
+
+
+.co{
+    color: #e7e7e7;
+}
+
+.col{
+    color: #ADFF14;
+}
+
+/* Connect.jsx section */
+
+.connectbg{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border: #104d4c;
+    border-radius: 14px;
+}
+
+
+.cn-bgblur {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: linear-gradient(to top , rgba(29, 29, 29, 0.8) 0%, rgba(255, 255, 255, 0.059) 100%);
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("/src/assets/fonts/BasementGrotesque-Black_v1.202.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.basementgrot-font {
+    font-family: "CustomFont";
+}
+
+@font-face {
+  font-family: "SansFont";
+  src: url("/src/assets/fonts/GeneralSans-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SemiSansFont";
+  src: url("/src/assets/fonts/GeneralSans-Semibold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Sans-font {
+    font-family: "SansFont";
+}
+
+.SemiSans-font {
+    font-family: "SemiSansFont";
+}
+
+.imgsize,
+.alllogos, 
+.creativeimg, 
+.neontitle, 
+.allprofileleft, 
+.allprofileright {
+    will-change: transform, opacity;
+    transform: translate3d(0, 0, 0);
+}
+
+
+video {
+    will-change: transform, opacity, filter;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
