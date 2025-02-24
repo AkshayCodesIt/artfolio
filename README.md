@@ -62,8 +62,8 @@ Make sure you have the following installed on your machine:
 ### Cloning the Repository
 
 ```sh
-git clone https://github.com/
-cd artfolio-main
+git clone https://github.com/AkshayCodesIt/artfolio.git
+cd artfolio
 ```
 
 ### Installation
