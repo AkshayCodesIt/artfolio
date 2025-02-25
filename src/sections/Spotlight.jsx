@@ -19,10 +19,10 @@ const Spotlight = () => {
     return (
         <section id='community' className='relative w-full md:px-15 py-20 px-2'>
             <div className='md:py-4 lg:mx-17 max-w-[1250px] md:mx-5 mx-5'>
-                <h1 className='Sans-font lg:text-[60px] md:text-5xl text-3xl font-bold font-sans tracking-wider md:leading-17 leading-12'>
+                <h1 className='Sans-font lg:text-[60px] md:text-5xl max-md:text-[26px] font-bold font-sans tracking-wider md:leading-17 leading-12'>
                     Connecting Creativity:
                 </h1>
-                <h1 className='Sans-font lg:text-[60px] md:text-5xl text-[24px] font-bold font-sans tracking-wider md:leading-17 md:mt-1'>
+                <h1 className='Sans-font lg:text-[60px] md:text-5xl max-md:text-[24px] font-bold font-sans tracking-wider md:leading-17 md:mt-1 max-md:leading-7'>
                     Where Artists Meet Opportunities
                 </h1>
             </div>

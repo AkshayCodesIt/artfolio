@@ -18,6 +18,9 @@ const Pricing = () => {
           <p className='font-semibold text-left text-sm mb-4'>
             Join our membership and bring creativity to life. Showcase your work, connect with collectors, and gain insights to grow your artistic journey.
           </p>
+          <span className='hidden max-md:block text-[#92db00] text-xs'>
+            [ Swipe right to left to see more price options ]
+          </span>
         </div>
 
     

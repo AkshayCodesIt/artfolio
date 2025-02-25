@@ -67,7 +67,7 @@ const Story = () => {
             <div className='mx-auto max-w-[1280px] p-6 md:px-15 pb-10 flex-none justify-center overflow-hidden'>
                 <div ref={textRef} className='relative z-2 flex flex-col max-w-1112 pb-6'>
                     <h2 className='text-sm font-semibold leading-[50px] tracking-wider uppercase text-center'>Your story <span className='text-sm text-blue-600 font-bold'>telling</span></h2>
-                    <h1 className='mx-auto md:text-6xl text-4xl max-w-[700px] font-bold md:leading-[60px] leading-[50px] tracking-wider uppercase text-center'>
+                    <h1 className='mx-auto md:text-6xl max-md:text-3xl max-w-[700px] font-bold md:leading-[70px] max-md:leading-[40px] tracking-wider max-md:tracking-wide uppercase text-center'>
                         Every piece of art tells a story
                     </h1>
                 </div>
