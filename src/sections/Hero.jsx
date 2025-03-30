@@ -218,29 +218,29 @@ const Hero = ({ startAnimation }) => {
     <section data-scroll-section id='home' className='relative pt-20 h-[100vh]'>
       <div className='mx-auto my-auto max-w-[1280px] max-lg:mt-40 lg:mt-6 max-md:mt-10 lg:p-6 md:p-4 p-2 pt-10 pb-10 flex-none justify-center overflow-hidden'>
         <div className='lg:hidden md:block'>
-          <img id='palette' src="/images/Herosection/BG/paint-palette.svg" alt="" className='absolute bottom-5 max-md:bottom-3 md:scale-130 md:-left-12.5 -left-16 -rotate-5 z-2' />
-          <img id='books' src="/images/Herosection/BG/books.svg" alt="" className='absolute top-15 max-md:top-15 md:scale-130 md:-right-2.5 -right-19 -rotate-50 z-2' />
+          <img id='palette' src={import.meta.env.BASE_URL + "/images/Herosection/BG/paint-palette.svg"} alt="" className='absolute bottom-5 max-md:bottom-3 md:scale-130 md:-left-12.5 -left-16 -rotate-5 z-2' />
+          <img id='books' src={import.meta.env.BASE_URL + "/images/Herosection/BG/books.svg"} alt="" className='absolute top-15 max-md:top-15 md:scale-130 md:-right-2.5 -right-19 -rotate-50 z-2' />
 
           <div className=''>
-            <img id='painttube' src="/images/Herosection/BG/painttube.svg" alt="" className='absolute bottom-3 -rotate-45 -right-10 md:scale-140 z-2' />
-            <img id='paintfall' src="/images/Herosection/BG/paintfall.svg" alt="" className='absolute bottom-53 opacity-0 -rotate-45 right-10 z-1 scale-120 scale-y-150 md:scale-150 md:scale-y-200 md:bottom-73 md:right-30' />
+            <img id='painttube' src={import.meta.env.BASE_URL + "/images/Herosection/BG/painttube.svg"} alt="" className='absolute bottom-3 -rotate-45 -right-10 md:scale-140 z-2' />
+            <img id='paintfall' src={import.meta.env.BASE_URL + "/images/Herosection/BG/paintfall.svg"} alt="" className='absolute bottom-53 opacity-0 -rotate-45 right-10 z-1 scale-120 scale-y-150 md:scale-150 md:scale-y-200 md:bottom-73 md:right-30' />
 
           </div>
 
-          <img id='markers' src="/images/Herosection/BG/markers.svg" alt="" className='absolute md:top-32 rotate-140 md:-left-14 md:scale-150 scale-120 -left-15 top-16 z-2' />
+          <img id='markers' src={import.meta.env.BASE_URL + "/images/Herosection/BG/markers.svg"} alt="" className='absolute md:top-32 rotate-140 md:-left-14 md:scale-150 scale-120 -left-15 top-16 z-2' />
 
         </div>
         <div className='relative flex flex-wrap justify-center z-2 lg:min-w-112 max-md:max-w-170 max-md:mt-10 pb-6'>
           <h1 className='basementgrot-font lg:text-[74px] md:text-[45px] text-[45px] font-semibold lg:leading-[99px] md:leading-20.5 leading-15.5 tracking-[-0.02em] uppercase text-center'>A place to display your <span className='masterpiece mx-auto font-extrabold lg:text-[100px] md:text-[80px] text-[45px]'>masterpiece</span></h1>
         </div>
         <div className='hidden lg:flex flex-col items-center z-20'>
-          <img src="/images/Herosection/himg1.jpeg" alt="Image" id='img1' className='imgsize' />
-          <img src="/images/Herosection/himg2.jpeg" alt="Image" id='img2' className='imgsize' />
-          <img src="/images/Herosection/himg3.jpeg" alt="Image" id='img3' className='imgsize' />
-          <img src="/images/Herosection/himg8.jpeg" alt="Image" id='img4' className='imgsize' />
-          <img src="/images/Herosection/himg5.jpeg" alt="Image" id='img5' className='imgsize' />
-          <img src="/images/Herosection/himg6.jpeg" alt="Image" id='img6' className='imgsize' />
-          <img src="/images/Herosection/himg7.jpeg" alt="Image" id='img7' className='imgsize' />
+          <img src={import.meta.env.BASE_URL + "/images/Herosection/himg1.jpeg"} alt="Image" id='img1' className='imgsize' />
+          <img src={import.meta.env.BASE_URL + "/images/Herosection/himg2.jpeg"} alt="Image" id='img2' className='imgsize' />
+          <img src={import.meta.env.BASE_URL + "/images/Herosection/himg3.jpeg"} alt="Image" id='img3' className='imgsize' />
+          <img src={import.meta.env.BASE_URL + "/images/Herosection/himg8.jpeg"} alt="Image" id='img4' className='imgsize' />
+          <img src={import.meta.env.BASE_URL + "/images/Herosection/himg5.jpeg"} alt="Image" id='img5' className='imgsize' />
+          <img src={import.meta.env.BASE_URL + "/images/Herosection/himg6.jpeg"} alt="Image" id='img6' className='imgsize' />
+          <img src={import.meta.env.BASE_URL + "/images/Herosection/himg7.jpeg"} alt="Image" id='img7' className='imgsize' />
 
         </div>
 

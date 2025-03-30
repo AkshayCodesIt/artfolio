@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '/images/svgviewer-output.svg'
+// import logo from '/images/svgviewer-output.svg'
 import { useGSAP } from '@gsap/react'
 import { useState } from 'react'
 import { gsap } from 'gsap'
@@ -20,7 +20,7 @@ const Header = ({ onAnimationComplete }) => {
     <header className='fixed top-0 left-0 z-50 w-full px-5 py-3 m-auto'>
       <div className='nav-blur flex justify-between items-center border border-gray-300 shadow-md rounded-2xl px-3 md:py-1'>
         <div className='flex flex-row shrink-0 drop-shadow h-12'>
-          <img src={logo} alt="artfolio" className='object-cover shrink-0 h-full md:p-1 p-2' />
+          <img src={import.meta.env.BASE_URL + "/images/svgviewer-output.svg"} alt="artfolio" className='object-cover shrink-0 h-full md:p-1 p-2' />
         </div>
 
         {/* Desktop menu */}
@@ -66,7 +66,7 @@ const Header = ({ onAnimationComplete }) => {
           onClick={() => setmenuopen(!menuopen)}
         >
           <img
-            src={`/images/Herosection/${menuopen ? "close" : "menu"}.svg`}
+            src={import.meta.env.BASE_URL + `/images/Herosection/${menuopen ? "close" : "menu"}.svg`}
             alt="magic"
             className="size-6 object-contain"
           />

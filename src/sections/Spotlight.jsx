@@ -28,7 +28,7 @@ const Spotlight = () => {
             </div>
 
             <div className='flex justify-center md:mt-2 m-5'>
-                <img src="/images/Spotlight/artistman.png" alt="Show your creativity" className='spotimg' />
+                <img src={import.meta.env.BASE_URL + "/images/Spotlight/artistman.png"} alt="Show your creativity" className='spotimg' />
             </div>
 
             <div className='md:py-10 lg:mx-17 mx-5 mt-7 md:mt-0'>
@@ -44,25 +44,25 @@ const Spotlight = () => {
             <div className='alllogos flex w-full mt-5 mb-0 md:mt-0'>
 
                 <div className='flex w-[1368px]  items-center z-10'>
-                    <img src="/images/Logos/Artblocks.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/Diplomart.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/GoogleArtsCulture.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/MassArt.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/Masterworks.svg" alt="Masterworks" className='logos ' />
-                    <img src="/images/Logos/MuseumArt.svg" alt="MuseumArt" className='logos ' />
-                    <img src="/images/Logos/SinemArt.svg" alt="SinemArt" style={{ height: 50 }} className='logos ' />
-                    <img src="/images/Logos/Theatre.svg" alt="Theatre" className='logos ' />
-                    <img src="/images/Logos/NationalGalleries.svg" alt="Theatre" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Artblocks.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Diplomart.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/GoogleArtsCulture.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/MassArt.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Masterworks.svg"} alt="Masterworks" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/MuseumArt.svg"} alt="MuseumArt" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/SinemArt.svg"} alt="SinemArt" style={{ height: 50 }} className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Theatre.svg"} alt="Theatre" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/NationalGalleries.svg"} alt="Theatre" className='logos ' />
 
-                    <img src="/images/Logos/Artblocks.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/Diplomart.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/GoogleArtsCulture.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/MassArt.svg" alt="" className='logos ' />
-                    <img src="/images/Logos/Masterworks.svg" alt="Masterworks" className='logos ' />
-                    <img src="/images/Logos/MuseumArt.svg" alt="MuseumArt" className='logos ' />
-                    <img src="/images/Logos/SinemArt.svg" alt="SinemArt" style={{ height: 50 }} className='logos ' />
-                    <img src="/images/Logos/Theatre.svg" alt="Theatre" className='logos ' />
-                    <img src="/images/Logos/NationalGalleries.svg" alt="Theatre" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Artblocks.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Diplomart.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/GoogleArtsCulture.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/MassArt.svg"} alt="" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Masterworks.svg"} alt="Masterworks" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/MuseumArt.svg"} alt="MuseumArt" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/SinemArt.svg"} alt="SinemArt" style={{ height: 50 }} className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/Theatre.svg"} alt="Theatre" className='logos ' />
+                    <img src={import.meta.env.BASE_URL + "/images/Logos/NationalGalleries.svg"} alt="Theatre" className='logos ' />
                 </div>
             </div>
 

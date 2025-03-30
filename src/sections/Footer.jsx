@@ -12,16 +12,16 @@ const Footer = () => {
             </p>
             <div className='flex flex-row justify-evenly w-[300px] py-5'>
                 <a href="">
-                    <img src="/images/Footer/facebook.png" alt="" width={'50px'}/>
+                    <img src={import.meta.env.BASE_URL + "/images/Footer/facebook.png"} alt="" width={'50px'}/>
                 </a>
                 <a href="">
-                    <img src="/images/Footer/instagram.png" alt="" width={'50px'}/>
+                    <img src={import.meta.env.BASE_URL + "/images/Footer/instagram.png"} alt="" width={'50px'}/>
                 </a>
                 <a href="">
-                    <img src="/images/Footer/twitter.png" alt="" width={'50px'}/>
+                    <img src={import.meta.env.BASE_URL + "/images/Footer/twitter.png"} alt="" width={'50px'}/>
                 </a>
                 <a href="">
-                    <img src="/images/Footer/pinterest.png" alt="" width={'50px'}/>
+                    <img src={import.meta.env.BASE_URL + "/images/Footer/pinterest.png"} alt="" width={'50px'}/>
                 </a>
             </div>
         </div>

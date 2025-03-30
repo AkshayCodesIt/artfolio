@@ -9,7 +9,7 @@ const Creative = () => {
     const textRef = useRef(null);
 
     useEffect(() => {
-        const splitext = new SplitType(textRef.current, { types: "words" });
+        const splitext = new SplitType(textRef.current, { types: ["words","chars"] });
     
         const t2 = gsap.timeline({
             scrollTrigger: {
@@ -20,11 +20,11 @@ const Creative = () => {
             }
         });
     
-        t2.from(splitext.words, {
+        t2.from(splitext.chars, {
             opacity: 0,
             y: 30,
             duration: 0.5,
-            stagger: 0.1,
+            stagger: 0.02,
             ease: "power2.out"
         });
     
@@ -81,13 +81,13 @@ const Creative = () => {
     return (
         <section className='relative flex w-full h-[100dvh] justify-center overflow-hidden'>
             <div className='cimgae hidden md:flex items-center overflow-hidden'>
-                <img id='cimg1' src="/images/CreativeImg/Cimg1.jpeg" alt="image" className='creativeimg' />
-                <img id='cimg2' src="/images/CreativeImg/Cimg2.jpeg" alt="image" className='creativeimg' />
-                <img id='cimg3' src="/images/CreativeImg/Cimg3.jpeg" alt="image" className='creativeimg' />
-                <img id='cimg4' src="/images/CreativeImg/Cimg4.jpeg" alt="image" className='creativeimg' />
-                <img id='cimg5' src="/images/CreativeImg/Cimg5.jpeg" alt="image" className='creativeimg' />
-                <img id='cimg6' src="/images/CreativeImg/Cimg6.jpeg" alt="image" className='creativeimg' />
-                <img id='cimg7' src="/images/CreativeImg/Cimg7.jpeg" alt="image" className='creativeimg' />
+                <img id='cimg1' src={import.meta.env.BASE_URL + "/images/CreativeImg/Cimg1.jpeg"} alt="image" className='creativeimg' />
+                <img id='cimg2' src={import.meta.env.BASE_URL + "/images/CreativeImg/Cimg2.jpeg"} alt="image" className='creativeimg' />
+                <img id='cimg3' src={import.meta.env.BASE_URL + "/images/CreativeImg/Cimg3.jpeg"} alt="image" className='creativeimg' />
+                <img id='cimg4' src={import.meta.env.BASE_URL + "/images/CreativeImg/Cimg4.jpeg"} alt="image" className='creativeimg' />
+                <img id='cimg5' src={import.meta.env.BASE_URL + "/images/CreativeImg/Cimg5.jpeg"} alt="image" className='creativeimg' />
+                <img id='cimg6' src={import.meta.env.BASE_URL + "/images/CreativeImg/Cimg6.jpeg"} alt="image" className='creativeimg' />
+                <img id='cimg7' src={import.meta.env.BASE_URL + "/images/CreativeImg/Cimg7.jpeg"} alt="image" className='creativeimg' />
             </div>
 
 

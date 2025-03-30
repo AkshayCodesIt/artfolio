@@ -47,7 +47,7 @@ const Connect = () => {
             friction: 0.005,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball1.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball1.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -61,7 +61,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball2.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball2.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -75,7 +75,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball3.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball3.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -89,7 +89,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball4.svg",
+                    texture: `${import.meta.env.BASE_URL}/images/Connect/ball4.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -102,7 +102,7 @@ const Connect = () => {
             frictionAir: 0.03,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball5.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball5.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -116,7 +116,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball6.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball6.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -130,7 +130,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball7.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball7.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -144,7 +144,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball8.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball8.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -158,7 +158,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball9.svg",
+                    texture:`${import.meta.env.BASE_URL}images/Connect/ball9.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -172,7 +172,7 @@ const Connect = () => {
             friction: 8,
             render: {
                 sprite: {
-                    texture: "/images/Connect/ball10.svg",
+                    texture: `${import.meta.env.BASE_URL}images/Connect/ball10.svg`,
                     xScale: 0.63, 
                     yScale: 0.63
                 }
@@ -228,12 +228,12 @@ const Connect = () => {
                 
                     <div className='absolute top-6 flex text-5xl font-semibold flex-nowrap overflow-hidden'>
                         <div className='neontitle flex text-6xl font-semibold flex-nowrap shrink-0 items-center'>
-                            <img src="/images/Connect/Label1.svg" alt="" className='h-18 mx-2' />
-                            Inspired by the people <img src="/images/Connect/Label2.svg" alt="" className='h-18 mx-2' /> A New Art Platform for Creative Minds <img src="/images/Connect/Label3.svg " alt="" className='h-18 mx-2' />
+                            <img src={import.meta.env.BASE_URL + "/images/Connect/Label1.svg"} alt="" className='h-18 mx-2' />
+                            Inspired by the people <img src={import.meta.env.BASE_URL + "/images/Connect/Label2.svg"} alt="" className='h-18 mx-2' /> A New Art Platform for Creative Minds <img src={import.meta.env.BASE_URL + "/images/Connect/Label3.svg"} alt="" className='h-18 mx-2' />
                         </div>
                         <div className='neontitle flex text-6xl font-semibold flex-nowrap shrink-0 items-center'>
-                            <img src="/images/Connect/Label1.svg" alt="" className='h-18 mx-2' />
-                            Inspired by the people <img src="/images/Connect/Label2.svg" alt="" className='h-18 mx-2' /> A New Art Platform for Creative Minds <img src="/images/Connect/Label3.svg " alt="" className='h-18 mx-2' />
+                            <img src={import.meta.env.BASE_URL + "/images/Connect/Label1.svg"} alt="" className='h-18 mx-2' />
+                            Inspired by the people <img src={import.meta.env.BASE_URL + "/images/Connect/Label2.svg"} alt="" className='h-18 mx-2' /> A New Art Platform for Creative Minds <img src={import.meta.env.BASE_URL + "/images/Connect/Label3.svg"} alt="" className='h-18 mx-2' />
                         </div>
                     </div>
 

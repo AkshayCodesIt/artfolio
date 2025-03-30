@@ -12,7 +12,7 @@ const Story = () => {
     const textRef = useRef(null);
 
     useEffect(() => {
-        const splitext = new SplitType(textRef.current, { types: "words" });
+        const splitext = new SplitType(textRef.current, { types: ["words","chars"] });
     
         const t2 = gsap.timeline({
             scrollTrigger: {
@@ -23,11 +23,11 @@ const Story = () => {
             }
         });
     
-        t2.from(splitext.words, {
+        t2.from(splitext.chars, {
             opacity: 0,
             y: 30,
             duration: 0.5,
-            stagger: 0.1,
+            stagger: 0.03,
             ease: "power2.out"
         });
     
@@ -75,9 +75,9 @@ const Story = () => {
                 <div id='boxcontain'  className='flex flex-col md:flex-row md:flex-wrap'>
                     <div className='md:flex-row flex flex-wrap relative mt-5 gap-3 justify-center lg:px-10'>
                         <div id='box1' className='md:w-[45%] w-full min-h-110 relative border-2 border-purple-500 rounded-xl overflow-hidden'>
-                            <video src="/960-142611994_small.mp4" loading="lazy" autoPlay muted loop playsInline className='max-md:absolute max-md:bottom-53 max-md:scale-140'></video>
+                            <video src={import.meta.env.BASE_URL + "/960-142611994_small.mp4"} loading="lazy" autoPlay muted loop playsInline className='max-md:absolute max-md:bottom-53 max-md:scale-140'></video>
                             <button className='flex absolute top-3 left-3 items-center bg-gray-200 px-2 rounded-4xl'>
-                                <img src="/images/play-button.png" alt="" width={"30px"} height={"30px"} />
+                                <img src={import.meta.env.BASE_URL + "/images/play-button.png"} alt="" width={"30px"} height={"30px"} />
                                 <div className='p-2 py-3 text-sm font-semibold'>
                                     Play Video
                                 </div>
@@ -92,7 +92,7 @@ const Story = () => {
                         </div>
 
                         <div id='box2' className='md:w-[45%] border-2 border-[#f06750] rounded-xl overflow-hidden'>
-                            <img src="/images/Story/E-commerce_art.jpeg" alt="E-commerce" className='object-cover' />
+                            <img src={import.meta.env.BASE_URL + "/images/Story/E-commerce_art.jpeg"} alt="E-commerce" className='object-cover' />
                             <div className='p-5'>
                                 <h1 className='text-left text-2xl font-semibold leading-10'>Where Art Breathes Commerce</h1>
 
@@ -104,7 +104,7 @@ const Story = () => {
 
                     <div className='flex flex-col md:flex-row md:flex-wrap gap-3 justify-center mt-4 lg:px-10'>
                         <div id='box3' className='md:w-[45%] border-[#8b8d80] border-2 relative rounded-xl overflow-hidden gap-3'>
-                            <img src="/images/Story/Children-drawing1.jpg" alt="E-commerce" className='object-cover' />
+                            <img src={import.meta.env.BASE_URL + "/images/Story/Children-drawing1.jpg"} alt="E-commerce" className='object-cover' />
                             <div className='p-5'>
                                 <h1 className='text-left text-2xl font-semibold leading-10'>Spin Your Art into Gold</h1>
 
@@ -114,7 +114,7 @@ const Story = () => {
                         </div>
 
                         <div id='box4' className='md:w-[45%] row-start-auto border-2 border-[#0f2316] rounded-xl overflow-hidden gap-3'>
-                            <img src="/images/Story/Focused Young Man Working at Desk.jpeg" alt="E-commerce" className='object-cover' />
+                            <img src={import.meta.env.BASE_URL + "/images/Story/Focused Young Man Working at Desk.jpeg"} alt="E-commerce" className='object-cover' />
                             <div className='p-5'>
                                 <h1 className='text-left text-2xl font-semibold leading-10'>Bridging Art and Technology</h1>
 

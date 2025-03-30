@@ -25,7 +25,7 @@ const Showcase = () => {
             <div className=' md:max-w-[65%] relative max-w-[90%] z-10 max-md:mt-10'>
 
                 <div className='lg:hidden bgside -z-1 absolute top-0 md:top-55 max-md:top-45 md:-right-90 max-md:-right-70 rotate-45'>
-                    <img src="/images/scribble1.svg" alt="" />
+                    <img src={import.meta.env.BASE_URL + "/images/scribble1.svg"} alt="" />
                 </div>
 
                 <h1 className='basementgrot-font drop-shadow-md md:text-6xl text-4xl font-extrabold tracking-wide py-4 uppercase bg-gradient-to-r from-[#0f68a9] via-[#07f49e] to-[#42047e] bg-clip-text text-transparent'>
