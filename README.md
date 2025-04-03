@@ -16,6 +16,7 @@
 2. ⚙️ [Tech Stack](#️-tech-stack)
 3. 🔋 [Features](#-features)
 4. ⛏️ [Quick Start](#️-quick-start)
+5. 🌏 [Live Demo](#-live-demo)
 
 ## 😄 Introduction
 
@@ -76,4 +77,8 @@ Running the Project
 ```sh
 npm run dev
 ```
-Open http://localhost:5173 in your browser to view the project.
+Open http://localhost:5173/artfolio/ in your browser to view the project.
+
+## 🌏 Live Demo
+
+Check out the live version of this project here: [Artfolio](https://akshaycodesit.github.io/artfolio/)
